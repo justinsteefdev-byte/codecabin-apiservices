@@ -26,6 +26,7 @@ class ContactForm(BaseModel):
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+print(TELEGRAM_BOT_TOKEN)
 
 @app.post("/contact")
 async def send_contact_message(form: ContactForm):
